@@ -1,6 +1,8 @@
 package com.kevin.springbootuse;
 
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.validation.BindException;
+import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
@@ -18,12 +20,12 @@ public class GlobalExceptionHandler {
                 .build();
     }
 
-    @ExceptionHandler(Exception.class)
-    public HttpResponse exception(Exception exception) {
-        log.warn("Exception------------------->");
+    @ExceptionHandler(BindException.class)
+    public HttpResponse exception(BindException exception) {
+        log.warn("BindException------------------->");
         return HttpResponse.builder()
                 .code(400)
-                .msg(exception.getMessage())
+                .msg(exception.getAllErrors().stream().findFirst().orElse(new ObjectError(exception.getObjectName(), exception.getMessage())).getDefaultMessage())
                 .build();
     }
 
