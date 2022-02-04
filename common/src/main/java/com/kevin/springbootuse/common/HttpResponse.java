@@ -1,4 +1,4 @@
-package com.kevin.springbootuse;
+package com.kevin.springbootuse.common;
 
 import lombok.Builder;
 import lombok.Data;

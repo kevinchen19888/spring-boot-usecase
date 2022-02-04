@@ -1,4 +1,4 @@
-package com.kevin.springbootuse.mybatisdemo;
+package com.kevin.springbootuse.mybatisuse;
 
 import com.baomidou.mybatisplus.generator.config.DataSourceConfig;
 import org.apache.ibatis.jdbc.ScriptRunner;

@@ -1,4 +1,4 @@
-package com.kevin.springbootuse.mybatisdemo;
+package com.kevin.springbootuse.mybatisuse;
 
 import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;

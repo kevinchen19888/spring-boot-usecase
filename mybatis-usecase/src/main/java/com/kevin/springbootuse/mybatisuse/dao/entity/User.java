@@ -1,4 +1,4 @@
-package com.kevin.springbootuse.mybatisdemo.dao.entity;
+package com.kevin.springbootuse.mybatisuse.dao.entity;
 
 import lombok.Data;
 

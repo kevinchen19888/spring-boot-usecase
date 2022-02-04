@@ -1,11 +1,11 @@
-package com.kevin.springbootuse.mybatisdemo;
+package com.kevin.springbootuse.mybatisuse;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.kevin.springbootuse.mybatisdemo.dao.mapper")
+@MapperScan("com.kevin.springbootuse.mybatisuse.dao.mapper")
 public class MybatisApplication {
 
     public static void main(String[] args) {

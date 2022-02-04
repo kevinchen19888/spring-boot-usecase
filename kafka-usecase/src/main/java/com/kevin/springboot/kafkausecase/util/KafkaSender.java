@@ -1,4 +1,4 @@
-package com.kevin.springbootuse.util;
+package com.kevin.springboot.kafkausecase.util;
 
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;

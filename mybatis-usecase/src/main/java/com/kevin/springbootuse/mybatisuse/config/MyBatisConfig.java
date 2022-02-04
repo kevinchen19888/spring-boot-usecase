@@ -1,4 +1,4 @@
-package com.kevin.springbootuse.mybatisdemo.config;
+package com.kevin.springbootuse.mybatisuse.config;
 
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import com.baomidou.mybatisplus.extension.plugins.pagination.optimize.JsqlParserCountOptimize;

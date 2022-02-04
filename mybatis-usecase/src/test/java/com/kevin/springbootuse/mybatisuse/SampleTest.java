@@ -1,8 +1,8 @@
-package com.kevin.springbootuse.mybatisdemo;
+package com.kevin.springbootuse.mybatisuse;
 
 
-import com.kevin.springbootuse.mybatisdemo.dao.entity.User;
-import com.kevin.springbootuse.mybatisdemo.dao.mapper.UserMapper;
+import com.kevin.springbootuse.mybatisuse.dao.entity.User;
+import com.kevin.springbootuse.mybatisuse.dao.mapper.UserMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

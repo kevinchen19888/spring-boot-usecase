@@ -1,4 +1,4 @@
-package com.kevin.springbootuse;
+package com.kevin.springboot.kafkausecase;
 
 
 import org.springframework.boot.SpringApplication;
