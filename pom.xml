@@ -13,7 +13,8 @@
 	<modules>
 		<module>web</module>
 		<module>common</module>
-		<module>mybatis-demo</module>
+		<module>mybatis-usecase</module>
+		<module>kafka-usecase</module>
 	</modules>
 
 	<groupId>com.kevin.springbootuse</groupId>
@@ -26,6 +27,8 @@
 		<java.version>1.8</java.version>
 		<mybatis.version>2.2.0</mybatis.version>
 		<mybatis-plus.version>3.3.2</mybatis-plus.version>
+		<kafka.version>2.7.2</kafka.version>
+		<kafka-clients.version>2.7.1</kafka-clients.version>
 	</properties>
 
 	<dependencies>
@@ -41,21 +44,6 @@
 		</dependency>
 	</dependencies>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
-				<configuration>
-					<excludes>
-						<exclude>
-							<groupId>org.projectlombok</groupId>
-							<artifactId>lombok</artifactId>
-						</exclude>
-					</excludes>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+
 
 </project>
