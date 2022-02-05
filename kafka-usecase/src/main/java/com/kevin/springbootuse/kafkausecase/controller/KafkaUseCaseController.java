@@ -1,6 +1,6 @@
-package com.kevin.springboot.kafkausecase.controller;
+package com.kevin.springbootuse.kafkausecase.controller;
 
-import com.kevin.springboot.kafkausecase.util.KafkaSender;
+import com.kevin.springbootuse.kafkausecase.util.KafkaSender;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Controller;
