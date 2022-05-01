@@ -1,0 +1,21 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+    virtual-host: /
+    listener:
+      simple:
+        acknowledge-mode: manual # 手动应答
+        concurrency: 5 # 消费端最小并发数
+        max-concurrency: 10 # 消费端最大并发数
+        prefetch: 5 # 一次请求中预处理的消息数量
+    cache:
+      channel:
+        size: 50 # 缓存的channel数量
+### 自定义配置
+mq:
+  defaultExchange: amqpExchangeDemo # 默认交换器
+  queue: queueDemo # 队列名
+  routeKey: queue_key # 路由key

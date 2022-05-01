@@ -15,7 +15,8 @@
 		<module>common</module>
 		<module>mybatis-usecase</module>
 		<module>kafka-usecase</module>
-	</modules>
+        <module>rabbitmq-usercase</module>
+    </modules>
 
 	<groupId>com.kevin.springbootuse</groupId>
 	<artifactId>spring-boot-usecase</artifactId>
