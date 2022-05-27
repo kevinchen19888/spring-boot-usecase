@@ -5,7 +5,6 @@ import com.baomidou.mybatisplus.core.toolkit.StringPool;
 import com.baomidou.mybatisplus.generator.AutoGenerator;
 import com.baomidou.mybatisplus.generator.InjectionConfig;
 import com.baomidou.mybatisplus.generator.config.*;
-import com.baomidou.mybatisplus.generator.config.po.LikeTable;
 import com.baomidou.mybatisplus.generator.config.po.TableInfo;
 import com.baomidou.mybatisplus.generator.config.rules.DateType;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
@@ -144,13 +143,13 @@ public class MyBatisPlusGenerator {
         strategyConfig.setEntityLombokModel(true);
         strategyConfig.setRestControllerStyle(true);
         //当表名中带*号时可以启用通配符模式
-        if (tableNames.length == 1 && tableNames[0].contains("*")) {
-            String[] likeStr = tableNames[0].split("_");
-            String likePrefix = likeStr[0] + "_";
-            strategyConfig.setLikeTable(new LikeTable(likePrefix));
-        } else {
-            strategyConfig.setInclude(tableNames);
-        }
+        // if (tableNames.length == 1 && tableNames[0].contains("*")) {
+        //     String[] likeStr = tableNames[0].split("_");
+        //     String likePrefix = likeStr[0] + "_";
+        //     strategyConfig.setLikeTable(new LikeTable(likePrefix));
+        // } else {
+        //     strategyConfig.setInclude(tableNames);
+        // }
         return strategyConfig;
     }
 

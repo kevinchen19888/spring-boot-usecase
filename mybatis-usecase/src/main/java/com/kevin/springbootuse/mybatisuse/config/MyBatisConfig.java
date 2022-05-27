@@ -13,7 +13,7 @@ public class MyBatisConfig {
     @Bean
     public PaginationInterceptor paginationInterceptor() {
         PaginationInterceptor paginationInterceptor = new PaginationInterceptor();
-        paginationInterceptor.setCountSqlParser(new JsqlParserCountOptimize(true));
+        paginationInterceptor.setCountSqlParser(new JsqlParserCountOptimize());
         return paginationInterceptor;
     }
 }
