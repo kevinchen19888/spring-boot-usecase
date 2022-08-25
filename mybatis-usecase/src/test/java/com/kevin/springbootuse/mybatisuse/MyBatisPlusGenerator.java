@@ -23,6 +23,9 @@ public class MyBatisPlusGenerator {/*
         autoGenerator.execute();
 
 
+
+
+
     }
 
     *//**
