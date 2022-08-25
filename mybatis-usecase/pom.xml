@@ -48,7 +48,6 @@
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-generator</artifactId>
-            <version>${mybatis-plus.version}</version>
         </dependency>
         <!--Velocity模板生成引擎-->
         <dependency>

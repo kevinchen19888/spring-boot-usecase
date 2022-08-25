@@ -1,29 +1,10 @@
 package com.kevin.springbootuse.mybatisuse;
 
-import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException;
-import com.baomidou.mybatisplus.core.toolkit.StringPool;
-import com.baomidou.mybatisplus.generator.AutoGenerator;
-import com.baomidou.mybatisplus.generator.InjectionConfig;
-import com.baomidou.mybatisplus.generator.config.*;
-import com.baomidou.mybatisplus.generator.config.po.TableInfo;
-import com.baomidou.mybatisplus.generator.config.rules.DateType;
-import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
-import com.baomidou.mybatisplus.generator.engine.VelocityTemplateEngine;
-import lombok.SneakyThrows;
-import org.apache.commons.lang3.StringUtils;
-
-import java.io.FileReader;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Properties;
-import java.util.Scanner;
-
 /**
  * MyBatisPlus代码生成器
  * Created by macro on 2020/8/20.
  */
-public class MyBatisPlusGenerator {
+public class MyBatisPlusGenerator {/*
 
     public static void main(String[] args) {
         String projectPath = System.getProperty("user.dir") + "/mybatis-demo";
@@ -44,9 +25,9 @@ public class MyBatisPlusGenerator {
 
     }
 
-    /**
-     * 读取控制台内容信息
-     */
+    *//**
+ * 读取控制台内容信息
+ *//*
     private static String scanner(String tip) {
         Scanner scanner = new Scanner(System.in);
         System.out.println(("请输入" + tip + "："));
@@ -59,9 +40,9 @@ public class MyBatisPlusGenerator {
         throw new MybatisPlusException("请输入正确的" + tip + "！");
     }
 
-    /**
-     * 初始化全局配置
-     */
+    *//**
+ * 初始化全局配置
+ *//*
     private static GlobalConfig initGlobalConfig(String projectPath) {
         GlobalConfig globalConfig = new GlobalConfig();
         globalConfig.setOutputDir(projectPath + "/src/main/java");
@@ -80,9 +61,9 @@ public class MyBatisPlusGenerator {
         return globalConfig;
     }
 
-    /**
-     * 初始化数据源配置
-     */
+    *//**
+ * 初始化数据源配置
+ *//*
     private static DataSourceConfig initDataSourceConfig() {
         Properties properties = initConfig("generator.properties");
         DataSourceConfig dataSourceConfig = new DataSourceConfig();
@@ -105,9 +86,9 @@ public class MyBatisPlusGenerator {
         return properties;
     }
 
-    /**
-     * 初始化包配置
-     */
+    *//**
+ * 初始化包配置
+ *//*
     private static PackageConfig initPackageConfig(String moduleName) {
         Properties properties = initConfig("generator.properties");
         PackageConfig packageConfig = new PackageConfig();
@@ -117,9 +98,9 @@ public class MyBatisPlusGenerator {
         return packageConfig;
     }
 
-    /**
-     * 初始化模板配置
-     */
+    *//**
+ * 初始化模板配置
+ *//*
     private static TemplateConfig initTemplateConfig() {
         TemplateConfig templateConfig = new TemplateConfig();
         //可以对controller、service、entity模板进行配置
@@ -133,9 +114,9 @@ public class MyBatisPlusGenerator {
         return templateConfig;
     }
 
-    /**
-     * 初始化策略配置
-     */
+    *//**
+ * 初始化策略配置
+ *//*
     private static StrategyConfig initStrategyConfig(String[] tableNames) {
         StrategyConfig strategyConfig = new StrategyConfig();
         strategyConfig.setNaming(NamingStrategy.underline_to_camel);
@@ -153,9 +134,9 @@ public class MyBatisPlusGenerator {
         return strategyConfig;
     }
 
-    /**
-     * 初始化自定义配置
-     */
+    *//**
+ * 初始化自定义配置
+ *//*
     private static InjectionConfig initInjectionConfig(String projectPath, String moduleName) {
         // 自定义配置
         InjectionConfig injectionConfig = new InjectionConfig() {
@@ -181,5 +162,6 @@ public class MyBatisPlusGenerator {
         return injectionConfig;
     }
 
+*/
 }
 
